@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:fontFeatureSettings="bold"
+        android:text="Login" />
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/Nama"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_x="117dp"
+            android:layout_y="26dp"
+            android:fontFeatureSettings="bold"
+            android:text="username"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Username"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_x="117dp"
+            android:layout_y="62dp"
+            android:text="TextView"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/Alamat"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_x="116dp"
+            android:layout_y="95dp"
+            android:text="TextView"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_x="0dp"
+            android:layout_y="0dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+    </AbsoluteLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="616dp">
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#F44336"
+            android:text="Log Out" />
+
+
+    </FrameLayout>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btnDashboard"
+            android:layout_width="70dp"
+            android:layout_height="38dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:layout_x="29dp"
+            android:layout_y="25dp"
+            app:srcCompat="@drawable/chart" />
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="70dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:layout_x="355dp"
+            android:layout_y="25dp"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+
+    </AbsoluteLayout>
+
+
+</LinearLayout>

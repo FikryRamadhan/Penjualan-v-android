@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Food XYZ"
+        android:textSize="40sp" />
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_x="20dp"
+        android:layout_y="259dp"
+        android:hint="cari item"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/lvProgram"
+        android:layout_width="match_parent"
+        android:layout_height="734dp"></ListView>
+
+    <Button
+        android:id="@+id/buttonBayar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:text="Bayar Sekarang"
+        android:backgroundTint="@color/material_dynamic_primary50"
+        />
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/dashboard"
+            android:layout_width="70dp"
+            android:layout_height="38dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:layout_x="43dp"
+            android:layout_y="16dp"
+            app:srcCompat="@drawable/chart" />
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="70dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:layout_x="320dp"
+            android:layout_y="20dp"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+    </AbsoluteLayout>
+
+</LinearLayout>
